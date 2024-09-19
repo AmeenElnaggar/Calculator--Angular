@@ -13,8 +13,8 @@ export class UserComponent {
 
   enterdintialInvestment = signal('0');
   enterdannualInvestment = signal('0');
-  enterdexpectedRetrun = signal('5');
-  enterdduration = signal('10');
+  enterdexpectedRetrun = signal('0');
+  enterdduration = signal('0');
 
   onSubmit() {
     this.investmentService.calculateInvestmentResults({
@@ -26,7 +26,7 @@ export class UserComponent {
 
     this.enterdintialInvestment.set('0');
     this.enterdannualInvestment.set('0');
-    this.enterdexpectedRetrun.set('5');
-    this.enterdduration.set('10');
+    this.enterdexpectedRetrun.set('0');
+    this.enterdduration.set('0');
   }
 }
